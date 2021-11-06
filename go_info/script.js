@@ -34,9 +34,8 @@ document.addEventListener('mousemove', showImgContent);
     var d = new Date();
     var n = d.getHours();
   
-    // entre 17h et 8h le thème sombre sera désactivé
-    if (n <= 8 || n >= 17) { 
-      // (n > 8 || n < 18)
+    // entre 17h et 8h le thème sombre sera activé
+    if (n < 8 || n > 18) { 
       $("body").addClass("light");
       $(".switch").addClass("switched");
     }
