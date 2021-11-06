@@ -16,6 +16,13 @@
   --black-blue-light-2: #404255;
   --black-blue-light-3: #4b4d64;
   --black-light: #424455;
+
+  /* Couleurs GoInfo */
+  --black: #001000;
+  --dark-red : #4C0D00;
+  --middle-red :#760700;
+  --light-red: #BE0E00;
+  --white: #E1D9D9;
 }
 
 body {
