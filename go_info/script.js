@@ -23,23 +23,25 @@ document.addEventListener('mousemove', showImgContent);
   $(".switch").on("click", function () {
     if ($("body").hasClass("light")) {
       $("body").removeClass("light");
+      $("footer").removeClass("light");
       $(".switch").removeClass("switched");
     } else {
       $("body").addClass("light");
       $(".switch").addClass("switched");
+      $("footer").addClass("light");
     }
   });
 
-  $(document).ready(function () {
-    var d = new Date();
-    var n = d.getHours();
+  // $(document).ready(function () {
+  //   var d = new Date();
+  //   var n = d.getHours();
   
-    // entre 17h et 8h le thème sombre sera activé
-    if (n < 8 || n > 18) { 
-      $("body").addClass("light");
-      $(".switch").addClass("switched");
-    }
-  });
+  //   // entre 17h et 8h le thème sombre sera activé
+  //   if (n < 8 || n > 18) { 
+  //     $("body").addClass("light");
+  //     $(".switch").addClass("switched");
+  //   }
+  // });
 
   $(document).ready(function () {
     "use strict";

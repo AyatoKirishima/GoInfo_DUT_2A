@@ -876,8 +876,12 @@ img:hover {
 
 footer {
   padding: 1rem 0;
-  background: #f7f7f7;
   text-align: center;
+  background-color: var(--black-blue);
+}
+
+footer.light {
+  background: red;
 }
 
 @supports (display: grid) {
