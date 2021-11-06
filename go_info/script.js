@@ -26,11 +26,13 @@ document.addEventListener('mousemove', showImgContent);
       $("footer").removeClass("light");
       $(".switch").removeClass("switched");
       $(".icon").removeClass("light");
+      $(".title_show").addClass("dark");
     } else {
       $("body").addClass("light");
       $(".switch").addClass("switched");
       $("footer").addClass("light");
       $(".icon").addClass("light");
+      $(".title_show").removeClass("dark");
     }
   });
 

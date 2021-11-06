@@ -49,13 +49,13 @@ h1 {
   font-size: 12vw;
   font-weight: 900;
   line-height: 1;
-  color: var(--white);
+  color: var(--grey-light);
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
 
 body.light h1 {
-  color: var(--white);
+  color: var(--grey-light);
 }
 
 body.light {
@@ -83,13 +83,13 @@ body.light {
 
 .color-gradient-red-yellow {
   background: linear-gradient(160deg, var(--dark-red), var(--middle-red));
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
 .color-gradient-red-yellow .uil:before {
   background: linear-gradient(160deg, var(--dark-red), var(--middle-red));
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
@@ -156,7 +156,7 @@ body.light {
   font-size: 24px;
   opacity: 0;
   background-image: linear-gradient(298deg, var(--dark-red), var(--middle-red));
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   left: 0;
   top: 0;
@@ -272,7 +272,7 @@ body.light .progress-wrap svg.progress-circle path {
   transition: all 300ms linear;
 }
 
-.switched {}
+/* .switched {} */
 
 .switched .circle {
   left: 45px;
@@ -857,6 +857,12 @@ img:hover {
   font-size: 1.5rem;
   font-weight: 700;
 }
+.title_show {
+  font-size: 2rem;
+}
+.title.dark {
+  color: var(--grey-light);
+}
 
 .category {
   font-size: 1rem;
@@ -886,7 +892,7 @@ footer.light {
 }
 
 .icon {
-  color: var(--white);
+  color: var(--grey-light);
   font-size: 1.5rem;
 }
 
