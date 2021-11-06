@@ -25,10 +25,12 @@ document.addEventListener('mousemove', showImgContent);
       $("body").removeClass("light");
       $("footer").removeClass("light");
       $(".switch").removeClass("switched");
+      $(".icon").removeClass("light");
     } else {
       $("body").addClass("light");
       $(".switch").addClass("switched");
       $("footer").addClass("light");
+      $(".icon").addClass("light");
     }
   });
 
