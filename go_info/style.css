@@ -883,8 +883,8 @@ img:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0%;
+  position: inherit;
+  bottom: 0%; 
   width: 100%;
   padding: 1rem 0;
   text-align: center;

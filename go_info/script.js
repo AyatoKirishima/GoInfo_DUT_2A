@@ -44,6 +44,9 @@ document.addEventListener('mousemove', showImgContent);
     if (n > 8 || n < 18) { 
       $("body").addClass("light");
       $(".switch").addClass("switched");
+      $("footer").addClass("light");
+      $(".icon").addClass("light");
+      // $(".title_show").removeClass("dark");
     }
   });
 
