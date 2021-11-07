@@ -36,16 +36,16 @@ document.addEventListener('mousemove', showImgContent);
     }
   });
 
-  // $(document).ready(function () {
-  //   var d = new Date();
-  //   var n = d.getHours();
+  $(document).ready(function () {
+    var d = new Date();
+    var n = d.getHours();
   
-  //   // entre 17h et 8h le thème sombre sera activé
-  //   if (n < 8 || n > 18) { 
-  //     $("body").addClass("light");
-  //     $(".switch").addClass("switched");
-  //   }
-  // });
+    // entre 17h et 8h le thème clair sera activé
+    if (n > 8 || n < 18) { 
+      $("body").addClass("light");
+      $(".switch").addClass("switched");
+    }
+  });
 
   $(document).ready(function () {
     "use strict";
