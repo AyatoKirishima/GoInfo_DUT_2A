@@ -882,9 +882,11 @@ img:hover {
   display: inline-block;
 }
 
+/* Footer */
+
 footer {
   position: inherit;
-  bottom: 0%; 
+  bottom: 0%;
   width: 100%;
   padding: 1rem 0;
   text-align: center;
