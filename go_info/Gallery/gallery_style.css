@@ -1,90 +1,100 @@
 /* Galerie */
 
 .gallery {
-  display: flex;
-  padding: 2px;
-  transition: 0.3s;
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
 }
 
 .gallery:hover .gallery__image {
-  filter: grayscale(1);
+    filter: grayscale(1);
 }
 
 .gallery__column {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
 }
 
 .gallery__link {
-  margin: 2px;
-  overflow: hidden;
+    margin: 2px;
+    overflow: hidden;
 }
 
 .gallery__link:hover .gallery__image {
-  filter: grayscale(0);
+    filter: grayscale(0);
 }
 
 .gallery__link:hover .gallery__caption {
-  opacity: 1;
+    opacity: 1;
 }
 
 .gallery__thumb {
-  position: relative;
+    position: relative;
 }
 
 .gallery__image {
-  display: block;
-  width: 100%;
-  transition: 0.3s;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
 }
 
 .gallery__image:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .gallery__caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 25px 15px 15px;
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  color: white;
-  opacity: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-  transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
 }
+
 
 /* Footer */
 
+.social,
+.copyright {
+    margin: 1rem;
+}
+
+.social li {
+    display: inline-block;
+}
+
 footer {
-  position: inherit;
-  bottom: 0%;
-  width: 100%;
-  padding: 1rem 0;
-  text-align: center;
-  background-color: var(--dark-gray);
+    position: inherit;
+    bottom: 0%;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--dark-gray);
 }
 
 footer.light {
-  background: var(--grey-light);
+    background: var(--grey-light);
 }
 
 .icon {
-  color: var(--grey-light);
-  font-size: 1.5rem;
+    color: var(--grey-light);
+    font-size: 1.5rem;
 }
 
 .icon:hover {
-  color: var(--middle-red);
+    color: var(--middle-red);
 }
 
 .icon.light:hover {
-  color: var(--middle-red);
+    color: var(--middle-red);
 }
 
 .icon.light {
-  color: var(--dark-gray);
+    color: var(--dark-gray);
 }
