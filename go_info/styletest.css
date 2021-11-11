@@ -323,7 +323,7 @@ a.active {
 }
 
 nav {
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 nav ul {
@@ -474,7 +474,7 @@ footer.light {
 /* Entête et Logo */
 
 .change {
-    height: 75px;
+    height: 100px;
     width: auto;
     margin: 20px;
 }
