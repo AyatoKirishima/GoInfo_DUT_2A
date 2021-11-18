@@ -803,16 +803,19 @@ nav ul {
 
 nav li {
     font-size: 1.25rem;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 nav li:nth-child(2) {
     margin: 0;
 }
 
-#highlight {
+
+/* #highlight {
     color: var(--middle-red);
     font-size: 1.25rem;
-}
+} */
 
 .gallery {
     padding: 0 0 4rem 0;
@@ -947,4 +950,33 @@ footer.light {
         display: block;
         padding: 1rem 0;
     }
+}
+
+
+/* Entête et Logo */
+
+.change img {
+    height: 100px;
+    width: auto;
+    margin: 20px;
+}
+
+.img-top {
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+#highlight {
+    color: var(--middle-red);
+    font-size: 1.25rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }

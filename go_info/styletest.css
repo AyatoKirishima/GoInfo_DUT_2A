@@ -497,4 +497,5 @@ footer.light {
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-left: 10px;
 }
