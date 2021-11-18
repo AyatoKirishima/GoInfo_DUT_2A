@@ -480,11 +480,14 @@ footer.light {
 }
 
 .img-top {
-    display: none;
     position: absolute;
     z-index: 99;
     top: 20px;
     display: inline;
+}
+
+.hide {
+    display: none;
 }
 
 #highlight {
