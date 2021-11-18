@@ -473,10 +473,18 @@ footer.light {
 
 /* Entête et Logo */
 
-.change {
+.change img {
     height: 100px;
     width: auto;
     margin: 20px;
+}
+
+.img-top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    display: inline;
 }
 
 #highlight {

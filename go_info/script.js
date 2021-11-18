@@ -27,7 +27,8 @@ document.addEventListener('mousemove', showImgContent);
             $(".switch").removeClass("switched");
             $(".icon").removeClass("light");
             $(".title_show").addClass("dark");
-            // document.getElementById("change").src = "./img/logo_info_white.png";
+            $(".img-top").addClass
+                // document.getElementById("change").src = "./img/logo_info_white.png";
         } else {
             $("body").addClass("light");
             $(".switch").addClass("switched");
