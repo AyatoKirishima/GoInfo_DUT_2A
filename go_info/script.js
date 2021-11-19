@@ -45,7 +45,7 @@ document.addEventListener('mousemove', showImgContent);
         var n = d.getHours();
 
         // entre 17h et 8h le thème clair sera activé
-        if (n > 8 || n < 18) {
+        if (n > 8 || n < 17) {
             $("body").addClass("light");
             $(".switch").addClass("switched");
             $("footer").addClass("light");
