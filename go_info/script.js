@@ -18,6 +18,21 @@ document.addEventListener('mousemove', showImgContent);
 (function($) {
     "use strict";
 
+    $(document).ready(function() {
+        var d = new Date();
+        var n = d.getHours();
+
+        // entre 17h et 8h le thème clair sera activé
+        if (n > 17 || n < 8) {
+            $("body").addClass("light");
+            $(".switch").addClass("switched");
+            $("footer").addClass("light");
+            $(".icon").addClass("light");
+            $(".img-top").addClass("hide");
+            // $(".title_show").removeClass("dark");
+        }
+    });
+
     //Switch dark/light
 
     $(".switch").on("click", function() {
@@ -40,20 +55,6 @@ document.addEventListener('mousemove', showImgContent);
         }
     });
 
-    $(document).ready(function() {
-        var d = new Date();
-        var n = d.getHours();
-
-        // entre 17h et 8h le thème clair sera activé
-        if (n > 8 || n < 17) {
-            $("body").addClass("light");
-            $(".switch").addClass("switched");
-            $("footer").addClass("light");
-            $(".icon").addClass("light");
-            $(".img-top").addClass("hide");
-            // $(".title_show").removeClass("dark");
-        }
-    });
 
     $(document).ready(function() {
         "use strict";
