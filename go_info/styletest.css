@@ -30,7 +30,7 @@ body {
     font-weight: 500;
     line-height: 1.65;
     color: var(--grey);
-    background-color: var(--black);
+    background-color: var(--dark-gray);
     overflow-x: hidden;
     letter-spacing: 0.2px;
     -webkit-transition: all 200ms linear;
@@ -357,7 +357,7 @@ footer {
     width: 100%;
     padding: 1rem 0;
     text-align: center;
-    background-color: var(--dark-gray);
+    background-color: var(--black);
 }
 
 footer.light {

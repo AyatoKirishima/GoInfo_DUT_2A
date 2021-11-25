@@ -15,14 +15,14 @@ function showImgContent(e) {
 document.addEventListener('mousemove', showImgContent);
 
 // Fin img gallery
-(function($) {
+(function ($) {
     "use strict";
 
-    // $(document).ready(function() {
-    //     var d = new Date();
-    //     var n = d.getHours();
+    $(document).ready(function () {
+        var d = new Date();
+        var n = d.getHours();
 
-        // // entre 17h et 8h le thème sombre sera activé
+        // entre 17h et 8h le thème sombre sera activé
         // if (n > 18 || n <= 8) {
         //     if ($("body").hasClass("light")) {
         //         $("body").removeClass("light");
@@ -41,18 +41,19 @@ document.addEventListener('mousemove', showImgContent);
         //         $(".img-top").addClass("hide");
         //         // document.getElementById("change").src = "./img/logo_info_white.png";
         //     }
-            // $("body").addClass("light");
-            // $(".switch").addClass("switched");
-            // $("footer").addClass("light");
-            // $(".icon").addClass("light");
-            // $(".img-top").addClass("hide");
-            // // $(".title_show").removeClass("dark");
-    //     }
-    // });
+        //Hop mode clair initiallement activé
+        $("body").addClass("light");
+        $(".switch").addClass("switched");
+        $("footer").addClass("light");
+        $(".icon").addClass("light");
+        $(".img-top").addClass("hide");
+        // $(".title_show").removeClass("dark");
+        // }
+    });
 
     //Switch dark/light
 
-    $(".switch").on("click", function() {
+    $(".switch").on("click", function () {
         if ($("body").hasClass("light")) {
             $("body").removeClass("light");
             $("footer").removeClass("light");
@@ -73,7 +74,7 @@ document.addEventListener('mousemove', showImgContent);
     });
 
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         "use strict";
 
         //Scroll back to top
@@ -87,7 +88,7 @@ document.addEventListener('mousemove', showImgContent);
         progressPath.getBoundingClientRect();
         progressPath.style.transition = progressPath.style.WebkitTransition =
             "stroke-dashoffset 10ms linear";
-        var updateProgress = function() {
+        var updateProgress = function () {
             var scroll = $(window).scrollTop();
             var height = $(document).height() - $(window).height();
             var progress = pathLength - (scroll * pathLength) / height;
@@ -97,14 +98,14 @@ document.addEventListener('mousemove', showImgContent);
         $(window).scroll(updateProgress);
         var offset = 50;
         var duration = 550;
-        jQuery(window).on("scroll", function() {
+        jQuery(window).on("scroll", function () {
             if (jQuery(this).scrollTop() > offset) {
                 jQuery(".progress-wrap").addClass("active-progress");
             } else {
                 jQuery(".progress-wrap").removeClass("active-progress");
             }
         });
-        jQuery(".progress-wrap").on("click", function(event) {
+        jQuery(".progress-wrap").on("click", function (event) {
             event.preventDefault();
             jQuery("html, body").animate({ scrollTop: 0 }, duration);
             return false;
