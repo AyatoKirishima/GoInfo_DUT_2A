@@ -18,9 +18,9 @@ document.addEventListener('mousemove', showImgContent);
 (function($) {
     "use strict";
 
-    $(document).ready(function() {
-        var d = new Date();
-        var n = d.getHours();
+    // $(document).ready(function() {
+    //     var d = new Date();
+    //     var n = d.getHours();
 
         // // entre 17h et 8h le thème sombre sera activé
         // if (n > 18 || n <= 8) {
@@ -47,8 +47,8 @@ document.addEventListener('mousemove', showImgContent);
             // $(".icon").addClass("light");
             // $(".img-top").addClass("hide");
             // // $(".title_show").removeClass("dark");
-        }
-    });
+    //     }
+    // });
 
     //Switch dark/light
 
