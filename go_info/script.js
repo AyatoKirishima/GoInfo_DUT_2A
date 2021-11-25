@@ -22,25 +22,25 @@ document.addEventListener('mousemove', showImgContent);
         var d = new Date();
         var n = d.getHours();
 
-        // entre 17h et 8h le thème sombre sera activé
-        if (n > 18 || n <= 8) {
-            if ($("body").hasClass("light")) {
-                $("body").removeClass("light");
-                $("footer").removeClass("light");
-                $(".switch").removeClass("switched");
-                $(".icon").removeClass("light");
-                $(".title_show").addClass("dark");
-                $(".img-top").removeClass("hide");
-                // document.getElementById("change").src = "./img/logo_info_white.png";
-            } else {
-                $("body").addClass("light");
-                $(".switch").addClass("switched");
-                $("footer").addClass("light");
-                $(".icon").addClass("light");
-                $(".title_show").removeClass("dark");
-                $(".img-top").addClass("hide");
-                // document.getElementById("change").src = "./img/logo_info_white.png";
-            }
+        // // entre 17h et 8h le thème sombre sera activé
+        // if (n > 18 || n <= 8) {
+        //     if ($("body").hasClass("light")) {
+        //         $("body").removeClass("light");
+        //         $("footer").removeClass("light");
+        //         $(".switch").removeClass("switched");
+        //         $(".icon").removeClass("light");
+        //         $(".title_show").addClass("dark");
+        //         $(".img-top").removeClass("hide");
+        //         // document.getElementById("change").src = "./img/logo_info_white.png";
+        //     } else {
+        //         $("body").addClass("light");
+        //         $(".switch").addClass("switched");
+        //         $("footer").addClass("light");
+        //         $(".icon").addClass("light");
+        //         $(".title_show").removeClass("dark");
+        //         $(".img-top").addClass("hide");
+        //         // document.getElementById("change").src = "./img/logo_info_white.png";
+        //     }
             // $("body").addClass("light");
             // $(".switch").addClass("switched");
             // $("footer").addClass("light");
